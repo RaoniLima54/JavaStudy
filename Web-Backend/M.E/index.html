@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hotel</h1>
+
+    <div class="listas">
+
+        <h2>Itens do quarto</h2>
+        <ul>
+            <li>Cama de casal</li>
+            <li>Ar-condicionado</li>
+            <li>Televisão</li>
+            <li>Frigobar</li>
+            <li>Cofre</li>
+        </ul>
+
+
+        <h2>Atrações próximas</h2>
+        <ol>
+            <li>Praia</li>
+            <li>Shopping Center</li>
+            <li>Museu Histórico</li>
+            <li>Parque Aquatico</li>
+            <li>Mercado central</li>        
+        </ol>
+    </div>
+
+    <div>
+        <h2>Tarifas e Tipos de  Quarto</h2>
+        <table>
+            <tr>
+                <th colspan="5"> Tabela de Preços por pessoas</th>
+            </tr>
+
+            <tr>
+                <td rowspan="5">Valores em R$</td>
+                <th>Diárias</th>
+                <th>Padrão</th>
+                <th>Luxo</th>
+                <th>Presidencial</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>100</td>
+                <td>150</td>
+                <td>200</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>190</td>
+                <td>280</td>
+                <td>370</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>270</td>
+                <td>400</td>
+                <td>500</td>
+            </tr>
+
+            <tr>
+                <th colspan="4">Para mais diárias consultar recepção</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <h2>Formulário de reserva</h2>
+        <form action="#" method="get">
+            <label for="name">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome: " >
+
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo" >
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email: ">
+
+            <label for="data">Data de Chegada</label>
+            <input type="date" name="data" id="data">
+
+            <label for="noites">Número de noites</label>
+            <input type="number" name="noites" id="noites" placeholder="Digite o número de noites: ">
+
+            <label for="hospedes">Número de hospedes</label>
+            <input type="number" name="hospedes" id="hospedes" placeholder="Digite o número de hospedes">
+
+            <label for="mensagem">mensagem</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+
+
+            <button type="submit">Enviar Reserva</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
